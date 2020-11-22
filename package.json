@@ -1,0 +1,19 @@
+{
+  "name": "serverservejson",
+  "version": "1.0.0",
+  "description": "homework for openedu",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "webserver_openedu"
+  },
+  "author": "\"Sergey Balakin\"",
+  "license": "ISC",
+  "dependencies": {
+    "cli": "^1.0.1",
+    "heroku": "^7.47.3"
+  }
+}
