@@ -1,7 +1,9 @@
 const http = require('http');
 const fs = require('fs');
 
-const server = http.createServer((req, res)=>{
+const PORT = process.env.PORT || 3000;
+
+http.createServer((req, res)=>{
 
     // if(req.url === '/favicon.ico'){
     //     res.writeHead(204).end();
@@ -44,6 +46,6 @@ const server = http.createServer((req, res)=>{
         res.writeHead(200, {'Content-Type':'text/plain; charset=utf-8'});
         res.end('Default');
     }
-}).listen(4321, ()=> console.log('Server is working on port 4321'));
+}).listen(PORT, ()=> console.log(`Server is working on port ${PORT}`));
 
 
