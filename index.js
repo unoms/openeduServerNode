@@ -35,8 +35,8 @@ http.createServer((req, res)=>{
         req.on('end', ()=>{
             let obj = {
                 'message': 'unom',
-                'x-text': xtextValue || 'default',
-                'x-body': xbodyValue || 'default'
+                'x-result': xtextValue || '',
+                'x-body': xbodyValue || ''
             }
             res.write(JSON.stringify(obj));
             res.end();       
